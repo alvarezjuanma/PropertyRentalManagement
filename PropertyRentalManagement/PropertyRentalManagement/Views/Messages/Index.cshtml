@@ -1,0 +1,135 @@
+﻿@model IEnumerable<PropertyRentalManagement.Models.Message>
+
+@{
+    ViewData["Title"] = "Mailbox";
+}
+
+<script src="~/js/messages.js" defer></script>
+<h2 class="text-left">Mailbox</h2>
+
+<!-- Mensaje de éxito -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="mailbox-container">
+
+    <!-- Lista de mensajes recibidos -->
+    <div class="mailbox-list">
+        <h3>Inbox</h3>
+        @if (ViewBag.ReceivedMessages != null && ((IEnumerable<PropertyRentalManagement.Models.Message>)ViewBag.ReceivedMessages).Any())
+        {
+            @foreach (var message in ViewBag.ReceivedMessages)
+            {
+                <div class="mailbox-item @(message.IsRead ? "" : "unread")" onclick="viewMessage(@message.MessageId)">
+                    <p class="sender">@message.Sender</p>
+                    <p class="subject">@message.Subject</p>
+                    <p class="timestamp">@message.SentDate.ToString("g")</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No received messages.</p>
+        }
+    </div>
+
+    <!-- Lista de mensajes enviados -->
+    <div class="mailbox-list">
+        <h3>Sent</h3>
+        @if (ViewBag.SentMessages != null)
+        {
+            @foreach (var message in ViewBag.SentMessages)
+            {
+                <div class="mailbox-item" onclick="viewMessage(@message.MessageId)">
+                    <p class="sender">To: @message.Recipient</p>
+                    <p class="subject">@message.Subject</p>
+                    <p class="timestamp">@message.SentDate.ToString("g")</p>
+                </div>
+            }
+        }
+        else
+        {
+            <p>No sent messages.</p>
+        }
+    </div>
+
+    <!-- Visualizar contenido del mensaje seleccionado -->
+    <div class="mailbox-content" id="messageContent">
+        <h3>Message Content</h3>
+        <p><strong>From:</strong> <span id="messageSender"></span></p>
+        <p><strong>Subject:</strong> <span id="messageSubject"></span></p>
+        <p><strong>Date:</strong> <span id="messageDate"></span></p>
+        <div id="messageBody">Select a message to read</div>
+        <button class="btn btn-secondary mt-3" onclick="replyMessage()">Reply</button>
+    </div>
+
+    <!-- Botón para redacción de un nuevo mensaje -->
+    <div class="mailbox-compose">
+        <h3>Compose Message</h3>
+        <a href="@Url.Action("Create", "Messages")" class="btn btn-primary">New Mail</a>
+    </div>
+</div>
+
+<!-- Estilos CSS -->
+<style>
+    .mailbox-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .mailbox-list, .mailbox-content, .mailbox-compose {
+        background-color: #f0f7f9;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        height: fit-content;
+    }
+
+    .mailbox-item {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        .mailbox-item:hover {
+            background-color: #e0efff;
+        }
+
+    .sender, .subject, .timestamp {
+        margin: 0;
+    }
+
+    .mailbox-content {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .mailbox-compose {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .btn-secondary {
+        background-color: #6ba6c7;
+        border: none;
+    }
+
+    .mailbox-item.unread {
+        font-weight: bold;
+        background-color: #f9f9f9;
+    }
+</style>
+
+<!-- Incluir el archivo JavaScript -->
+<script src="~/js/messages.js"></script>

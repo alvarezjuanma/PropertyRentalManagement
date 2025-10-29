@@ -1,0 +1,64 @@
+﻿@model PropertyRentalManagement.Models.Appointments
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create Appointment</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Campo para la fecha de la cita -->
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" type="datetime-local" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+
+            <!-- Campo para el estado de la cita -->
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <!-- Selección del Tenant -->
+            <div class="form-group">
+                <label asp-for="TenantId" class="control-label"></label>
+                <select asp-for="TenantId" class="form-control" asp-items="ViewBag.TenantId"></select>
+                <span asp-validation-for="TenantId" class="text-danger"></span>
+            </div>
+
+            <!-- Selección del Manager -->
+            <div class="form-group">
+                <label asp-for="ManagerId" class="control-label"></label>
+                <select asp-for="ManagerId" class="form-control" asp-items="ViewBag.ManagerId"></select>
+                <span asp-validation-for="ManagerId" class="text-danger"></span>
+            </div>
+
+            <!-- Selección del Apartment -->
+            <div class="form-group">
+                <label asp-for="ApartmentId" class="control-label"></label>
+                <select asp-for="ApartmentId" class="form-control" asp-items="ViewBag.ApartmentId"></select>
+                <span asp-validation-for="ApartmentId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

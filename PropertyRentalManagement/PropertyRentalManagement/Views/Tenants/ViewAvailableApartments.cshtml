@@ -1,0 +1,37 @@
+﻿@model IEnumerable<PropertyRentalManagement.Models.Apartments>
+
+@{
+    ViewData["Title"] = "Available Apartments";
+}
+
+<h2>Available Apartments</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Apartment Number</th>
+            <th>Building Name</th>
+            <th>Status</th>
+            <th>Manager Name</th>
+            <th>Manager Mail</th>
+            <th>Manager Phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var apartment in Model)
+        {
+            <tr>
+                <td>@apartment.ApartmentNumber</td>
+                <td>@apartment.Building.Name</td> 
+                <td>@apartment.Status</td>
+                <td>@apartment.Manager.Name</td> 
+                <td>@apartment.Manager.Email</td> 
+                <td>@apartment.Manager.Phone</td> 
+                <td>
+                    <a class="btn btn-primary" href="@Url.Action("Details", "Apartments", new { id = apartment.ApartmentId })">View Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

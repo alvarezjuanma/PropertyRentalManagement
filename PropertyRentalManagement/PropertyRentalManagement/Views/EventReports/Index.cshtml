@@ -1,0 +1,47 @@
+﻿@model IEnumerable<PropertyRentalManagement.Models.EventReport>
+
+@{
+    ViewData["Title"] = "Event Reports";
+}
+
+<h2>Event Reports</h2>
+
+<!-- Mensaje de éxito al crear un reporte -->
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<!-- Botón para crear un nuevo reporte (visible solo para Managers) -->
+@if (Context.Session.GetString("ManagerId") != null)
+{
+    <a asp-action="Create" class="btn btn-primary mb-3">New Report</a>
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Reported Date</th>
+            <th>Status</th>
+            <th>Manager</th>
+            <th>Tenant</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var report in Model)
+        {
+            <tr>
+                <td>@report.Title</td>
+                <td>@report.Description</td>
+                <td>@report.ReportedDate.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>@report.Status</td>
+                <td>@report.Manager?.Name</td>
+                <td>@report.Tenant?.Name</td>
+            </tr>
+        }
+    </tbody>
+</table>

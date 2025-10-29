@@ -1,0 +1,92 @@
+﻿@model PropertyRentalManagement.Models.Apartments
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Apartment</h1>
+
+<h4>Apartments</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Campo oculto para el ID del apartamento -->
+            <input type="hidden" asp-for="ApartmentId" />
+
+            <!-- Campo de selección para Status -->
+            <div class="form-group">
+                <label asp-for="Status" class="control-label"></label>
+                <select asp-for="Status" class="form-control" asp-items="ViewBag.StatusOptions"></select>
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+
+            <!-- Campo para Apartment Number -->
+            <div class="form-group">
+                <label asp-for="ApartmentNumber" class="control-label"></label>
+                <input asp-for="ApartmentNumber" class="form-control" />
+                <span asp-validation-for="ApartmentNumber" class="text-danger"></span>
+            </div>
+
+            <!-- Campo para Number of Bedrooms -->
+            <div class="form-group">
+                <label asp-for="NumberOfBedrooms" class="control-label"></label>
+                <input asp-for="NumberOfBedrooms" class="form-control" type="number" />
+                <span asp-validation-for="NumberOfBedrooms" class="text-danger"></span>
+            </div>
+
+            <!-- Campo para Number of Bathrooms -->
+            <div class="form-group">
+                <label asp-for="NumberOfBathrooms" class="control-label"></label>
+                <input asp-for="NumberOfBathrooms" class="form-control" type="number" />
+                <span asp-validation-for="NumberOfBathrooms" class="text-danger"></span>
+            </div>
+
+            <!-- Campo para Rent Amount -->
+            <div class="form-group">
+                <label asp-for="RentAmount" class="control-label"></label>
+                <input asp-for="RentAmount" class="form-control" type="number" />
+                <span asp-validation-for="RentAmount" class="text-danger"></span>
+            </div>
+
+            <!-- Campo para Pets Allowed -->
+            <div class="form-group form-check">
+                <input asp-for="PetsAllowed" class="form-check-input" type="checkbox" />
+                <label asp-for="PetsAllowed" class="form-check-label"></label>
+                <span asp-validation-for="PetsAllowed" class="text-danger"></span>
+            </div>
+
+            <!-- Campos ocultos para BuildingId y ManagerId -->
+            <input type="hidden" asp-for="BuildingId" />
+            <input type="hidden" asp-for="ManagerId" />
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+            @if (ViewBag.ErrorList != null)
+            {
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach (var error in ViewBag.ErrorList)
+                        {
+                            <li>@error</li>
+                        }
+                    </ul>
+                </div>
+            }
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

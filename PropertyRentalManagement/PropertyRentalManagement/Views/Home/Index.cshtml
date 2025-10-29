@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="home-background">
+    <div class="overlay">
+        <div class="content-box">
+            <h1>History, Tradition, Excellence</h1>
+            <p>View our properties</p>
+            <a href="#" class="btn btn-primary">Explore</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .home-background {
+        background-image: url('/Pictures/Montreal.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-box {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border: 2px solid white;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+    }
+
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: white;
+    }
+</style>

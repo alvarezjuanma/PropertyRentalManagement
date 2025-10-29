@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PropertyRentalManagement</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PropertyRentalManagement.styles.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header>   
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-controller="Home" asp-action="Index">PropertyRentalManagement</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="PropertyOwners" asp-action="OwnerDashboard">Property Owners</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="PropertyManagers" asp-action="ManagerDashboard">Property Managers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Tenants" asp-action="TenantDashboard">Tenants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Buildings" asp-action="Index">Buildings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Apartments" asp-action="Index">Apartments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Appointments" asp-action="Index">Appointments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            &copy; Developed by Juan Manuel Alvarez -2312235 - 2024 - PropertyRentalManagement - <a href="https://lasallecollege.com" target="_blank">LaSalle College</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+     <style>
+         html, body {
+             height: 50%;
+             margin: 0;
+             padding: 0;
+         }
+
+         /* Mantén el diseño flexible y el centrado del contenido principal */
+          main {
+              flex: 1;
+              /* display: flex; */
+              justify-content: center;
+              align-items: center;
+             padding: 70px;
+          }
+
+          /* Ajusta el estilo del footer para que se mantenga uniforme en todas las páginas */
+          .footer {
+              text-align: center;
+              padding: 10px 0;
+              background-color: #f8f9fa;
+              font-size: 0.8rem;
+              border-top: 1px solid #e5e5e5;
+              position: relative;
+
+          }
+
+          /* Ajustes específicos de la navbar, sin cambiar los elementos clave */
+          .navbar {
+              background-color: white;
+              padding: 0;
+              margin: 0;
+              height: 60px;
+          }
+
+          .navbar-brand {
+              background-color: #134567;
+              color: white !important;
+              padding: 15px 20px;
+              font-size: 1.5rem;
+              margin: 0;
+              line-height: 1;
+              height: 60px;
+          }
+
+          /* Mantén el estilo para el texto de la navbar */
+          .navbar-nav .nav-link {
+              color: #000; /* Texto negro para los links de la barra */
+          }
+
+          /* Para el ajuste del contenedor de la barra de navegación */
+          .container-fluid {
+              padding: 0;
+              margin: 0;
+          }
+
+          /* Asegura que los elementos de la navbar no añadan margen adicional */
+          .navbar-nav {
+              margin-bottom: 0;
+          }
+
+          /* Ajuste de las tablas para mantener la estructura base */
+          .table {
+              width: 100%;
+              margin-bottom: 1rem;
+              color: #212529;
+              border-collapse: collapse;
+          }
+
+              .table th,
+              .table td {
+                  padding: 0.75rem;
+                  vertical-align: top;
+                  border-top: 1px solid #dee2e6;
+                  text-align: left;
+              }
+
+              .table thead th {
+                  vertical-align: bottom;
+                  border-bottom: 2px solid #dee2e6;
+              }
+
+              .table tbody + tbody {
+                  border-top: 2px solid #dee2e6;
+              }
+
+              .table .table {
+                  background-color: #fff;
+              }
+
+     </style>
+</body>
+</html>

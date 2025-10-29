@@ -1,0 +1,215 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PropertyRentalManagement
+build_property.RootNamespace = PropertyRentalManagement
+build_property.ProjectDir = C:\PropertyRentalManagement\PropertyRentalManagement\PropertyRentalManagement\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\PropertyRentalManagement\PropertyRentalManagement\PropertyRentalManagement
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Apartments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Apartments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Apartments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Apartments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Apartments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Appointments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Appointments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Appointments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Appointments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Appointments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Buildings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Buildings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Buildings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Buildings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Buildings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVpbGRpbmdzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/EventReports/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRSZXBvcnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/EventReports/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRSZXBvcnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Messages/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Messages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Messages/Reply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZXNcUmVwbHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyManagers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlNYW5hZ2Vyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyManagers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlNYW5hZ2Vyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyManagers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlNYW5hZ2Vyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyManagers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlNYW5hZ2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyManagers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlNYW5hZ2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyManagers/ManagerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlNYW5hZ2Vyc1xNYW5hZ2VyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyOwners/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlPd25lcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyOwners/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlPd25lcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyOwners/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlPd25lcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyOwners/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlPd25lcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyOwners/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlPd25lcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/PropertyOwners/OwnerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlPd25lcnNcT3duZXJEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/TenantDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xUZW5hbnREYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Tenants/ViewAvailableApartments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVuYW50c1xWaWV3QXZhaWxhYmxlQXBhcnRtZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/PropertyRentalManagement/PropertyRentalManagement/PropertyRentalManagement/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4t5clv29uk

@@ -1,0 +1,131 @@
+﻿@model PropertyRentalManagement.Models.PropertyManager
+
+@{
+    ViewData["Title"] = "Manager Dashboard";
+}
+
+<h2 class="text-left">Manager Dashboard</h2>
+
+<!-- Información del Property Manager logueado -->
+<div class="tenant-info mt-4 p-3 bg-light rounded shadow-sm">
+    <h4>Manager Profile</h4>
+    <p>Name: @Model.Name</p>
+    <p>Email: @Model.Email</p>
+    <p>Phone: @Model.Phone</p>
+</div>
+
+<div class="grid-container mt-4">
+<!-- Sección para gestionar edificios -->
+    <div class="tenant-section p-3 bg-light rounded shadow-sm">
+    <h3>Manage Buildings</h3>
+    <a href="@Url.Action("Index", "Buildings")" class="btn btn-primary btn-lg btn-block" style="max-width: 300px;">List Buildings</a>
+    <a href="@Url.Action("Create", "Buildings")" class="btn btn-primary btn-lg btn-block mt-2" style="max-width: 300px;">Create Building</a>
+</div>
+
+<!-- Sección para gestionar apartamentos -->
+<div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+    <h3>Manage Apartments</h3>
+    <a href="@Url.Action("Index", "Apartments")" class="btn btn-secondary btn-lg btn-block" style="max-width: 300px;">List & status Apartments</a>
+    <a href="@Url.Action("Create", "Apartments")" class="btn btn-secondary btn-lg btn-block mt-2" style="max-width: 300px;">Create Apartment</a>
+</div>
+
+
+<!-- Sección para agendar citas con los inquilinos -->
+<div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+    <h3>Schedule Appointments</h3>
+    <a href="@Url.Action("Index", "Appointments")" class="btn btn-primary btn-lg btn-block" style="max-width: 300px;">View Appointments</a>
+    <a href="@Url.Action("Create", "Appointments")" class="btn btn-primary btn-lg btn-block mt-2" style="max-width: 300px;">Schedule Appointment</a>
+</div>
+
+<!-- Sección para responder a mensajes de los inquilinos -->
+<div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+    <h3>Respond to Tenant Messages</h3>
+        <a href="@Url.Action("Index", "Messages")" class="btn btn-secondary btn-lg btn-block" style="max-width: 300px;">Mailbox</a>
+         @* <a href="@Url.Action("ReplyToMessages", "PropertyManagers")" class="btn btn-secondary btn-lg btn-block mt-2" style="max-width: 300px;">Reply to Messages</a>
+         <a href="@Url.Action("ReplyToMessages", "PropertyManagers")" class="btn btn-secondary btn-lg btn-block mt-2" style="max-width: 300px;">Reply to Messages</a> *@
+</div>
+
+    <!-- Sección para agendar citas con los inquilinos -->
+    <div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+        <h3>Event Report</h3>
+        <a href="@Url.Action("Index", "EventReports")" class="btn btn-primary btn-lg btn-block" style="max-width: 300px;">View Reports Events</a>
+        <a href="@Url.Action("Create", "EventReports")" class="btn btn-primary btn-lg btn-block mt-2" style="max-width: 300px;">Create a report</a>
+    </div>
+
+
+</div>
+
+<!-- Estilos CSS -->
+<style>
+    body {
+        background-color: #f0f7f9;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    h2, h3, h4, p {
+        text-align: left; 
+    }
+
+    .tenant-section {
+        height: fit-content;
+    }
+
+    .tenant-info, .tenant-section {
+        background-color: white;
+        border-left: 5px solid #4b7d99;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+
+    .btn {
+        padding: 15px 0;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        text-align: center; /* Alinea el texto de los botones al centro */
+    }
+
+    .btn-primary {
+        background-color: #4b7d99;
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #6ba6c7;
+        border: none;
+    }
+
+    .btn-info {
+        background-color: #a7d2eb;
+        border: none;
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%;
+        text-align: center; /* El texto de los botones estará centrado */
+    }
+
+    h3 {
+        font-size: 1.5em;
+        color: #134567;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #134567;
+    }
+</style>

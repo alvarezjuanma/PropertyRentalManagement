@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Property Owner Dashboard";
+}
+
+<h2 class="text-left">Property Owner Dashboard</h2>
+
+<div class="tenant-info mt-4 p-3 bg-light rounded shadow-sm">
+    <h4>Owner Profile</h4>
+    <p>Name: @Model.Name</p>
+    <p>Email: @Model.Email</p>
+    <p>Phone: @Model.Phone</p>
+</div>
+
+<!-- Sección para gestionar Property Managers -->
+<div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+    <h3>Manage Property Managers</h3>
+    <a href="@Url.Action("Index", "PropertyManagers")" class="btn btn-primary btn-lg btn-block" style="max-width: 300px;">List Property Managers</a>
+    <a href="@Url.Action("Create", "PropertyManagers")" class="btn btn-primary btn-lg btn-block mt-2" style="max-width: 300px;">Create Property Manager</a>
+</div>
+
+<!-- Sección para gestionar Tenants -->
+<div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+    <h3>Manage Tenants</h3>
+    <a href="@Url.Action("Index", "Tenants")" class="btn btn-secondary btn-lg btn-block" style="max-width: 300px;">List Tenants</a>
+    <a href="@Url.Action("Create", "Tenants")" class="btn btn-secondary btn-lg btn-block mt-2" style="max-width: 300px;">Create Tenant</a>
+</div>
+
+<!-- Sección para ver reportes de eventos -->
+<div class="tenant-section mt-4 p-3 bg-light rounded shadow-sm">
+    <h3>View Event Reports</h3>
+    <a href="@Url.Action("Index", "EventReports")" class="btn btn-info btn-lg btn-block" style="max-width: 300px;">List Event Reports</a>
+</div>
+
+<!-- Estilos CSS -->
+<style>
+    body {
+        background-color: #f0f7f9;
+    }
+
+    h2, h3, h4, p {
+        text-align: left; 
+    }
+
+    .tenant-info, .tenant-section {
+        background-color: white;
+        border-left: 5px solid #4b7d99;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .btn {
+        padding: 15px 0;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        text-align: center; 
+    }
+
+    .btn-primary {
+        background-color: #4b7d99;
+        border: none;
+    }
+
+    .btn-secondary {
+        background-color: #6ba6c7;
+        border: none;
+    }
+
+    .btn-info {
+        background-color: #a7d2eb;
+        border: none;
+    }
+
+    .btn-block {
+        display: block;
+        width: 100%;
+        text-align: center; 
+    }
+
+    h3 {
+        font-size: 1.5em;
+        color: #134567;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        font-size: 1.25em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #134567;
+    }
+</style>
+
+

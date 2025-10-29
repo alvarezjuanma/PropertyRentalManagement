@@ -1,0 +1,69 @@
+﻿@model PropertyRentalManagement.Models.Message
+
+@{
+    ViewData["Title"] = "Compose Message";
+    var isManagerLoggedIn = ViewBag.IsManagerLoggedIn ?? false;
+}
+<script src="~/js/messages.js" defer></script>
+<h2>Compose Message</h2>
+
+@if (isManagerLoggedIn)
+{
+    @* ------------------form para cuando está logueado el manager ------------------- *@
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="TenantId">To</label>
+            <select asp-for="TenantId" class="form-control" required>
+                <option value="">Select Recipient</option>
+                @foreach (var tenant in ViewBag.Tenants)
+                {
+                    <option value="@tenant.TenantId">@tenant.Name (@tenant.Email)</option>
+                }
+            </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Subject">Subject</label>
+            <input asp-for="Subject" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label asp-for="Content">Message Content</label>
+            <textarea asp-for="Content" class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+}
+else
+{
+    @* ------------------form para cuando está logueado el tenant ------------------- *@
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="ManagerId">To</label>
+            <select asp-for="ManagerId" class="form-control" required>
+                <option value="">Select a Manager</option>
+                @foreach (var manager in ViewBag.Managers)
+                {
+                    <option value="@manager.ManagerId">@manager.Name (@manager.Email)</option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Subject">Subject</label>
+            <input asp-for="Subject" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Content">Message Content</label>
+            <textarea asp-for="Content" class="form-control" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
